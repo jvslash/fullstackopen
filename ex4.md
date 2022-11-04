@@ -1,4 +1,4 @@
-sequenceDiagram
+```mermaid
 browser->>server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
 server->>browser: HTTP 302 redirect /notes
 browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
@@ -11,3 +11,4 @@ Note left of browser: JS script requests the JSON file
 browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
 server->>browser: JSON-file
 Note left of browser: JS renders the list of messages from the JSON file
+```
