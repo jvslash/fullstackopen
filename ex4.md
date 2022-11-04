@@ -1,4 +1,5 @@
 ```mermaid
+sequenceDiagram
 browser->>server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
 server->>browser: HTTP 302 redirect /notes
 browser->>server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
